@@ -1,0 +1,560 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.main-banner {
+  background: #e2dedd;
+  height: 50vh;
+  position: relative;
+}
+
+.main-banner__content {
+  position: absolute;
+  top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-banner__title {
+  font-weight: 300;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  margin: 0px;
+}
+
+.main-banner__call-to-action {
+  font-family: var(--title-font);
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin: 1rem 0 0 0;
+}
+
+.main-banner__text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem 0 0 0;
+  padding: 0 2rem;
+}
+
+.cta-button {
+  background-color: var(--accent-color);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.25rem;
+  padding: 0.6rem 1.8rem;
+  color: var(--text-color);
+  margin: 3rem 0 0 0;
+}
+
+.mobile-background {
+  background: url('images/main-banner-mobile.png') no-repeat center center;
+  width: 100%;
+  height: 70vh;
+}
+
+@media (min-width: 720px) and (max-width: 1280px) {
+  .main-banner {
+    background-image: url('images/main-banner-wide.png');
+    background-size: cover;
+    background-position-y: 15%;
+    background-repeat: no-repeat;
+    height: 90vh;
+  }
+
+  .main-banner__content {
+    top: 30%;
+    left: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .main-banner__text {
+    padding: 0;
+  }
+
+  .mobile-background {
+    display: none;
+  }
+}
+
+@media (min-width: 1281px) {
+  .main-banner {
+    background-image: url('images/main-banner-wide.png');
+    background-size: cover;
+    background-position-y: 15%;
+    background-repeat: no-repeat;
+    height: 90vh;
+  }
+
+  .main-banner__content {
+    top: 30%;
+    left: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .main-banner__text {
+    padding: 0;
+  }
+
+  .mobile-background {
+    display: none;
+  }
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: -6rem;
+  position: relative;
+}
+
+.features-content {
+  height: 20rem;
+  width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.title {
+  font-family: var(--title-font);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 1rem;
+}
+
+.line {
+  border-top-width: 3px;
+  border-top-style: solid;
+  width: 3rem;
+}
+
+.text {
+  line-height: 1.7rem;
+  width: 85%;
+}
+
+.features-content__text {
+  text-align: center;
+  font-style: italic;
+}
+
+.features_content__bg-primary {
+  background: var(--accent-color-light);
+  color: var(--text-color);
+}
+
+.features_content__bg-black {
+  background: var(--text-color);
+  color: white;
+}
+
+.features_content__bg-white {
+  background: white;
+  color: var(--text-color);
+}
+
+.features-image__sleeping-woman-bw {
+  background-image: url('https://images01.nicepage.com/c461c07a441a5d220e8feb1a/3667f75ad176549284eb3ae7/5919fed0-9290-0161-07e7-b4aac8e308ea.jpg');
+  background-position: 50% 50%;
+  width: 20rem;
+  height: 20rem;
+}
+
+.features-image__skincare {
+  background-image: url('https://images01.nicepage.com/c461c07a441a5d220e8feb1a/9fa29a566feb573185a1ab84/beautifulspaasianwomantouchingherfaceperfectfreshskinpurebeautymodel_50889114.jpg');
+  background-position: 50% 50%;
+  width: 20rem;
+  height: 20rem;
+}
+
+.features-image__special-offers {
+  background-image: url('https://images01.nicepage.com/c461c07a441a5d220e8feb1a/90db51f6423359b89b68bf50/setofcosmeticpaintbrushformakeup_12322061.jpg');
+  background-position: 50% 50%;
+  width: 20rem;
+  height: 20rem;
+}
+
+.features-image__beauty-salon {
+  background-image: url('https://images01.nicepage.com/c461c07a441a5d220e8feb1a/4a2569e9cf97583a8cf23c4f/closeupoffeetspatherapyandmassage_5387615402.jpg');
+  background-position: 50% 50%;
+  width: 20rem;
+  height: 20rem;
+}
+
+@media (min-width: 1281px) {
+  .features {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.regular-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.regular-section__content {
+  height: 20rem;
+  width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.special-image__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 20rem;
+  margin: 0 auto;
+  height: 600px;
+  margin-top: 5%;
+}
+
+.special-image__border {
+  border: 5px solid var(--accent-color);
+  height: 30rem;
+  width: 16rem;
+  position: relative;
+  top: 2rem;
+  z-index: 1;
+}
+
+.special-image__image {
+  background-image: url('https://images01.nicepage.com/c461c07a441a5d220e8feb1a/4df72516070d50999c0e8ceb/photo15215874117736a18c6e182a5.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 16rem;
+  height: 25rem;
+  position: relative;
+  top: -410px;
+  left: 40px;
+  z-index: 2;
+}
+
+.special-image__background {
+  border: 5px solid var(--accent-color-light);
+  height: 25rem;
+  width: 16rem;
+  background-color: var(--accent-color-light);
+  position: relative;
+  top: -720px;
+  left: 70px;
+}
+
+@media (min-width: 720px) and (max-width: 1280px) {
+  .regular-section {
+    width: 80%;
+    margin-left: 15%;
+    margin-right: 15%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .regular-section__content {
+    width: 50%;
+    height: unset;
+  }
+}
+
+@media (min-width: 1281px) {
+  .regular-section {
+    width: 80%;
+    margin-left: 15%;
+    margin-right: 15%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .regular-section__content {
+    width: 50%;
+    height: unset;
+  }
+  .desktop-title {
+    font-size: 3.5rem;
+  }
+  .special-image__container {
+    height: 800px;
+    width: 50%;
+    margin: 0;
+    max-width: 50%;
+  }
+  .special-image__image {
+    height: 37rem;
+    width: 30rem;
+    top: -660px;
+    left: 100px;
+  }
+  .special-image__border {
+    height: 45rem;
+    width: 25rem;
+    top: 0px;
+    left: 0px;
+  }
+  .special-image__background {
+    height: 37rem;
+    width: calc(100% - 220px);
+    top: -1150px;
+    left: 200px;
+  }
+}
+
+.products-bg {
+  background-image: url('https://images01.nicepage.com/c461c07a441a5d220e8feb1a/2812e923dc3e573d89b9f41b/b1.jpg');
+}
+
+.featured-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.featured-section__content {
+  height: 20rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: url('https://images01.nicepage.com/c461c07a441a5d220e8feb1a/b136b26c8e02567588c955fd/bg3.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.featured-image__container {
+  background-size: cover;
+  width: 100%;
+  height: 25rem;
+}
+
+@media (min-width: 1281px) {
+  .featured-section {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .featured-section__content {
+    height: auto;
+  }
+  .featured-image__container {
+    height: 70vh;
+  }
+}
+
+.testimonials {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.testimonal__text {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: -7rem;
+}
+
+.quote {
+  width: 15rem;
+  height: 15rem;
+}
+
+@media (min-width: 720px) and (max-width: 1280px) {
+  .testimonial__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .testimonials h5 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1281px) {
+  .testimonial__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .testimonials h5 {
+    text-align: center;
+  }
+}
+
+/* Beauty Treatments */
+.beauty-treatments {
+  background-image: url('https://images01.nicepage.com/c461c07a441a5d220e8feb1a/6f05da30138f5a91bec7ab21/sx.jpg');
+  padding: 10%;
+}
+
+.beauty-treatments__image {
+  background-image: url('https://images01.nicepage.com/c461c07a441a5d220e8feb1a/b52689edd57459b1a7cb22d1/girlinawellnesscenter_10981.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 40vh;
+}
+
+.beauty-treatments__container {
+  background: var(--text-color);
+  color: white;
+  padding: 10%;
+}
+
+.beauty-treatments__content {
+  padding: 10%;
+  border: 1px solid white;
+}
+
+@media (min-width: 1281px) {
+  .beauty-treatments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 5%;
+  }
+
+  .beauty-treatments__container {
+    padding: 5%;
+    width: 50%;
+  }
+
+  .beauty-treatments__content {
+    padding: 5%;
+    height: 100%;
+  }
+
+  .beauty-treatments__image {
+    background-image: url('https://images01.nicepage.com/c461c07a441a5d220e8feb1a/b52689edd57459b1a7cb22d1/girlinawellnesscenter_10981.jpg');
+    background-size: cover;
+    height: 40rem;
+    width: 50%;
+  }
+}
+
+.massage-image {
+  background-image: url('https://images01.nicepage.com/c461c07a441a5d220e8feb1a/12f5b6a8ef7b544995a4acf0/youngblondewomanhavingmassageandsmilinginthespa_11391139.jpg');
+  background-position: 70% 50%;
+}
+
+.appointment {
+  background-image: url('https://images01.nicepage.com/c461c07a441a5d220e8feb1a/622146696a1e5076a49d1b13/eb2ed1ba-05cd-04e3-ecae-7d80d4432e34.jpg');
+  background-size: cover;
+}
+
+.zoom-hover {
+  -webkit-transition: 0.1s all ease-in-out;
+  -o-transition: 0.1s all ease-in-out;
+  transition: 0.1s all ease-in-out;
+}
+
+.zoom-hover:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
